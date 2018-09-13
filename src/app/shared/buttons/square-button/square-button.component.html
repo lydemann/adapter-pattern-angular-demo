@@ -10,9 +10,9 @@
     </app-secondary-button>
   </ng-container>
   <ng-container *ngSwitchDefault>
-    <button mat-button (click)="onClick()" type="{{type}}" [ngStyle]="buttonStyle" [ngClass]="buttonClass">
+    <app-default-button>
       <ng-container *ngTemplateOutlet="contentTpl"></ng-container>
-    </button>
+    </app-default-button>
   </ng-container>
 </ng-container>
 

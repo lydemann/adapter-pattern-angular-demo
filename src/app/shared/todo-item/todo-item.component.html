@@ -11,15 +11,15 @@
         </div>
 
         <div class="align-right btn-group-vertical">
-            <button (click)="completeClick()" type="button" class="btn btn-success" aria-label="Edit">
+            <app-square-button (clicked)="completeClick()" class="btn" [buttonClass]="'btn-success'" aria-label="Completed">
                 Completed
-            </button>
-            <button *ngIf="!readOnlyTODO" (click)="editClick()" type="button" class="btn btn-info" aria-label="Edit">
+            </app-square-button>
+            <app-square-button *ngIf="!readOnlyTODO" (clicked)="editClick()" class="btn" [buttonClass]="'btn-info'" aria-label="Edit">
                 Edit
-            </button>
-            <button *ngIf="!readOnlyTODO" (click)="deleteClick()" type="button" class="btn btn-danger" aria-label="Delete">
+            </app-square-button>
+            <app-square-button *ngIf="!readOnlyTODO" (clicked)="deleteClick()" class="btn" [buttonClass]="'btn-danger'" aria-label="Delete">
                 Delete
-            </button>
+            </app-square-button>
         </div>
     </li>
 </div>
